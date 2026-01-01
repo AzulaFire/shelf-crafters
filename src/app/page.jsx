@@ -1,4 +1,5 @@
 // app/page.jsx
+import FAQ from '@/components/faq';
 import Hero from '@/components/hero';
 import ProductGallery from '@/components/product-gallery';
 import Reviews from '@/components/reviews';
@@ -25,6 +26,10 @@ export default async function HomePage() {
         </div>
 
         <ProductGallery products={products} />
+      </section>
+
+      <section className='mx-auto w-full max-w-6xl px-4 py-14 md:py-18'>
+        <FAQ />
       </section>
 
       <section className='border-t bg-muted/30'>
